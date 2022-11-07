@@ -20,3 +20,9 @@
 	- self._likes = self._ydl_info.get('like_count',0)
 	- self._dislikes = self._ydl_info.get('dislike_count')
 	- pafy/backend_youtube_dl.py 54번째줄 수정
+
+
+## 221107
+	- () 확인 잘하기
+	- 경로 확인 잘하기
+	- 한글 경로는 피하기
