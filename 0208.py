@@ -1,0 +1,18 @@
+# 0208.py
+import cv2
+
+#droid cam
+cap = cv2.VideoCapture('http://172.30.1.18:4747/mjpegfeed')
+
+frame_size = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
+print('frame_size =', frame_size)
+
+while True:
+	retval, frame = cap.read()
+	if not retval:
+		break
+
+	cv2.imshow('frame', frame)
+
+	key = cv2.waitkey(25)
+	if key == 27
