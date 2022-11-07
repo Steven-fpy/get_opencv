@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 
 # imageFile = './data/lena.jpg' /home/stvn/pyQT/PYQT_study/OpenCV/0202.py
-imageFile = '/home/stvn/pyQT/PYQT_study/OpenCV/data/lena.jpg'
+imageFile = '/home/stvn/pyQT/PYQT_study/get_opencv/data/lena.jpg'
 img = cv2.imread(imageFile)
 
 # cv2.IMREAD_UNCHANGED == -1, cv2.IMREAD_GRAYSCALE == 0, cv2.IMREAD_COLOR == 1

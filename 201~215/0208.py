@@ -2,7 +2,7 @@
 import cv2
 
 #droid cam
-cap = cv2.VideoCapture('http://172.30.1.18:4747/mjpegfeed')
+cap = cv2.VideoCapture('http://192.168.0.4:4747/video')
 
 frame_size = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 print('frame_size =', frame_size)
@@ -15,4 +15,8 @@ while True:
 	cv2.imshow('frame', frame)
 
 	key = cv2.waitkey(25)
-	if key == 27
+	if key == 27: #Esc
+		break
+if cap.isOpened():
+	cap.release()
+cv2.destroyAllWindows()
