@@ -2,7 +2,7 @@
 import cv2
 
 #droid cam
-cap = cv2.VideoCapture('http://192.168.0.4:4747/video')
+cap = cv2.VideoCapture('http://192.168.0.25:4747/video')
 
 frame_size = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 print('frame_size =', frame_size)
