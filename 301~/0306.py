@@ -1,6 +1,5 @@
 # 0306.py
 
-import pstats
 import cv2
 import numpy as np
 

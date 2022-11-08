@@ -49,6 +49,6 @@ class Video(animation.FuncAnimation):
 
 #프로그램 시작
 # camera = Video()
-camera = Video('./data/book.mp4')
+camera = Video('./data/checkBoard3x3.avi')
 plt.show()
 camera.close()
