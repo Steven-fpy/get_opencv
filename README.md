@@ -26,6 +26,10 @@
 	- 401~406 까지 진도 나감
 	- 407 작성
 
+# 221110
+
+	- 412까지 작성
+
 ## OpenCv
 	- opencv 패키지 설치
 	- 파이썬 3.10 설치
@@ -46,3 +50,8 @@
 	- pip install --upgrade pip
 	- pip install opencv-contrib-python
 	- 실행이 안되면 업그레이드를 하고 실행해보자
+
+## 221110
+
+	- droidcam 설치
+	- SUBSYSTEM=="usb",ATTR{idVendor}=="04e8",MODE="0666",GROUP="plugdev"
