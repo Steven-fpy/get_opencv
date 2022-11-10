@@ -17,7 +17,7 @@ img2 = img[250:280, 310:360].copy()
 
 
 # cv2.imshow('img', img)
-cv2.imshow('img2', img2)
+cv2.imshow('img', img2)
 
 cv2.waitKey()
 cv2.destroyAllWindows()
