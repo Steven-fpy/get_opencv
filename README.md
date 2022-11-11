@@ -30,6 +30,11 @@
 
 	- 412까지 작성
 
+# 221111
+
+	- 4단원 전부작성
+
+
 ## OpenCv
 	- opencv 패키지 설치
 	- 파이썬 3.10 설치
@@ -55,3 +60,5 @@
 
 	- droidcam 설치
 	- SUBSYSTEM=="usb",ATTR{idVendor}=="04e8",MODE="0666",GROUP="plugdev"
+
+## 221111
