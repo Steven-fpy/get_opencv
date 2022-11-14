@@ -38,7 +38,8 @@
 
 # 221114
 	
-	-
+	- 506까지 작성
+	- 꽃, 닭 예제 풀이
 
 
 
@@ -68,6 +69,3 @@
 
 	- droidcam 설치
 	- SUBSYSTEM=="usb",ATTR{idVendor}=="04e8",MODE="0666",GROUP="plugdev"
-
-## 221114
-
