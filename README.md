@@ -36,6 +36,12 @@
 	- 504 까지 작성
 	- Threshold
 
+# 221114
+	
+	-
+
+
+
 
 ## OpenCv
 	- opencv 패키지 설치
@@ -63,4 +69,5 @@
 	- droidcam 설치
 	- SUBSYSTEM=="usb",ATTR{idVendor}=="04e8",MODE="0666",GROUP="plugdev"
 
-## 221111
+## 221114
+
