@@ -17,14 +17,14 @@ if inputText.isdigit():
     # if totalM >= 2001:
     #     print("예산을 초과하였습니다. 다시 입력해주세요(최대 2000원)")
 
-    for r in range(MIN_C,totalM//RED):
+    for r in range(MIN_C,totalM//RED+1):
         rC = r
         cRC = rC * RED
         moNey = totalM - cRC
 
         # print("R",R)
         # for Y in range(Min,Yellow//TotalCost):
-        for yC in range(MIN_C,moNey//YELLOW):
+        for yC in range(MIN_C,moNey//YELLOW+1):
 
             # Y += 1
             cYC = yC*YELLOW

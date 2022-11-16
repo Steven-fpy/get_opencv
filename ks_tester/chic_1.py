@@ -14,13 +14,13 @@ MaxChikC = TOTAL_M // CHIC          #병아리의 최대 마릿수는 총비용 
 
 # TotalC = 0
 
-for rooster in range(1, MaxRooC):   #rooster라는 값은 1부터 수닭의 최대 마릿수 까지
+for rooster in range(1, MaxRooC+1):   #rooster라는 값은 1부터 수닭의 최대 마릿수 까지
     # RooC += 1
     # TRc = RooC*Rooster
-    for hen in range(1, MaxHenC):   #hen이라는 값은 1부터 암닭의 최대 마릿수 까지
+    for hen in range(1, MaxHenC+1):   #hen이라는 값은 1부터 암닭의 최대 마릿수 까지
         # HenC += 1
         # THc = HenC*Hen
-        for chic in range(1, MaxChikC): #chic 이라는 값은 1부터 chic 최대 마릿수 까지
+        for chic in range(1, MaxChikC+1): #chic 이라는 값은 1부터 chic 최대 마릿수 까지
             # ChikC += 1
             # TCc = ChikC*Chic
             totalCost = rooster * ROOSTER + hen * HEN + chic*CHIC
