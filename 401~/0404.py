@@ -6,6 +6,8 @@ import cv2
 img = cv2.imread('./data/lena.jpg')         # cv2.IMREAD_COLOR
 img[100, 200] = [255, 0, 0]                 # 컬러(BGR) 변경
 print(img[100, 200:210])                    # ROI 접근
+a = list(img)
+print(a)
 
 ##for y in range(100, 400):
 ##      for x in range(200, 300):

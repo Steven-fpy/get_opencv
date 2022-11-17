@@ -3,7 +3,8 @@ import cv2
 import numpy as np
 
 #1
-src = cv2.imread('./data/Penguins.jpg')
+src = cv2.imread('./data/ind.jpg')
+# src = cv2.imread('./data/Penguins.jpg')
 # src = cv2.imread('./data/fruits.jpg')
 hsv = cv2.cvtColor(src, cv2.COLOR_BGR2HSV)
 h, s, v = cv2.split(hsv)
