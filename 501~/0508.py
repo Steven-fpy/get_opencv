@@ -3,8 +3,8 @@ import cv2
 import numpy as np
 
 #1
-# src = cv2.imread('./data/Penguins.jpg')
-src = cv2.imread('./data/fruits.jpg')
+src = cv2.imread('./data/Penguins.jpg')
+# src = cv2.imread('./data/fruits.jpg')
 hsv = cv2.cvtColor(src, cv2.COLOR_BGR2HSV)
 h, s, v = cv2.split(hsv)
 
@@ -16,8 +16,8 @@ hist = cv2.calcHist([roi_h], [0], None, [64], [0,256])
 backP = cv2.calcBackProject([h.astype(np.float32)], [0],
                             hist, [0, 256], scale = 1.0)
 
-#minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(backP)
-#T = maxVal - 1     #threshold
+# minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(backP)
+# T = maxVal - 1     #threshold
 
 #3
 hist = cv2.sort(hist, cv2.SORT_EVERY_COLUMN+cv2.SORT_DESCENDING)
