@@ -28,11 +28,14 @@ j2 = 500
 i2 = 300
 for i in range(0,541):
     if i < 510:
-        cv2.putText(dst, '0', (l,f-15), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
-        cv2.putText(dst, '1', (j,l+m), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
-        # cv2.putText(dst, '1', (j,l+m), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
-        # cv2.putText(dst, '1', (j,l), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
-        # cv2.putText(dst, '1', (j,l), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
+        cv2.putText(dst, '175', (5,45), fontFace=font,fontScale=1, color=(0,0,255), thickness=2)
+
+        cv2.putText(dst, '0', (l+5,f+105), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
+        cv2.putText(dst, '0', (j+5,l+45), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
+        cv2.putText(dst, '0', (j+5,l+105), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
+        cv2.putText(dst, '0', (j+5,l+165), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
+        cv2.putText(dst, '0', (j+5,l+225), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
+        cv2.putText(dst, '0', (j+5,l+285), fontFace=font,fontScale=1, color=(0,255,0), thickness=2)
 
 
         cv2.line(dst, (j, i-10),(j, i2), (255, 255, 255), 1)
