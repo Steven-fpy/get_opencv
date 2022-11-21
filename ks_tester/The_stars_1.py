@@ -26,16 +26,18 @@ def inPut():
         # print(f"예선점수 : {x} 점, 준결승점수 : {y}점, z값 : {z:.2f})")
         if x1 == 100 and y1 == 100:
             print("☆★아니 이렇게 완벽할수가 당신은 우승하였습니다★☆\n            :::You Are Perfect:::")   
+        elif Z == float:
+            print("정수를 입력해 주세요")    
+        elif Z<90:
+            print("조금 더 열심히 하세요 탈락입니다")
+            return
         X.append(x1)
         Y.append(y1)
         Z1.append(z)
         P.append([x1,y1,z])
-        
-        # print("\n\n                  낫 파운드!!!")
-    elif Z<90:
-        print("조금 더 열심히 하세요 탈락입니다")
-    elif x1 == 100 and y1 == 100:
-        print("☆★아니 이렇게 완벽할수가 당신은 우승하였습니다★☆\n            :::You Are Perfect:::")
+            # print("\n\n                  낫 파운드!!!")
+        # elif x1 == 100 and y1 == 100:
+        #     print("☆★아니 이렇게 완벽할수가 당신은 우승하였습니다★☆\n            :::You Are Perfect:::")
     
     elif x1 < 0:
         print("예선탈락.....안녕...!!!!!")
