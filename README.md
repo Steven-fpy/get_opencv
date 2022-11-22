@@ -71,7 +71,13 @@
 	- 이때 스위치와 LED 신호는 독립적이다.
 	- 결국 스위치는 digitalread, LED 는 digitalwrite 이다.
 	
+# 221122
 
+	- Arduino Extension 설치
+	- Tinkercad 이용하여 Arduino 회로 구성
+	- pullup, pulldown 생성
+	- 빌드
+	- 실행
 
 
 
@@ -123,5 +129,3 @@
 
 	- pull - up 방식 : 스위치가 눌리지 않았을때 전류가 통하는 것   ==   1
 	- pull -down 방식 : 스위치가 눌리지 않았을때 전류가 안통하는 것   ==  0
-
-	-
