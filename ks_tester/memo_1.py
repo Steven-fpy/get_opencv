@@ -107,3 +107,51 @@
 # card[87] : [11]
 # card[88] : [51]
 # card[89] : [72]
+
+int BUTTON_PIN = 2;
+int PWM_LED_PIN = 3;
+
+int LEDs[] = {13,12,11,10,9};
+
+int POTENTIOMETER_PIN = A0;
+
+int lastMode = 0;
+int mode = 0;
+
+int lastButtonState = 0;
+
+void setup()
+{
+  
+  pinMode(LED_BUILTIN, OUTPUT);
+  
+  pinMode(PWM_LED_PIN, OUTPUT);
+  
+  pinMode(BUTTON_PIN, INPUT);
+  pinMode(POTENTIOMETER_PIN, INPUT);
+  
+  for (int i=0; i<5; i++){
+    pinMode(LEDs[i], OUTPUT);
+  }
+  
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int potentiometerVal = analogRead(POTENTIOMETER_PIN);
+   
+  analogWrite(PWM_LED_PIN, potentiometerVal / 4);
+  
+  int buttonState = digitalRead(BUTTON_PIN);
+   
+  if (buttonState == 1 && lastButtonState == 0) {
+    lastMode = mode;
+    mode = (mode + 1) % 5;
+  }
+  lastButtonState = buttonState;
+   
+  digitalWrite(LEDs[lastMode], LOW);
+  digitalWrite(LEDs[mode], HIGH);
+   
+}
