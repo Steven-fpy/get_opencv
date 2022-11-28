@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # 50~60범위안에서 랜덤으로 생성되는 1000개 샘플의, 실시간으로 평균필터된 값을 구하고(샘플이 추가될때마다) 최종 평균을 구하세요.
 
-sampleCount = 1000
+sampleCount = 500
 
 # samples = []
 # mean = []
@@ -39,40 +39,15 @@ for i in range(sampleCount):
     total += sample
     mean = total / (i+1)
 
-    # mean = sample
-
-
-
-        # print ("gm의 값 : ", gm)
-    # sm = sum(samples)
-    # print("sm의 값 : ", sm)
-    # means = samples
-    # mean = random.uniform(51, 50)
-    # means.append(mean)
-
     samplePlots.append([sample])
     meanPlots.append([mean])
-# meAn = sum(mean)/sum(samples)
-# smpMean = sum(samples)/len(samples)
-# l = len(samples)
-# print("len_sam: ", l)
-# print("meAn : ", meAn)
-# print("smpMean :", smpMean)
+
 plt.plot(samplePlots,color = 'b', label = 'sample')
 plt.plot(meanPlots, color = 'r', label = 'mean', alpha = 0.5)
-# plt.plot(smpMean, color = 'g', label = 'smpMean', alpha = 0.5)
-
-# plt.plot(meAn, color = 'b', label = 'meAn')
 
 plt.legend(loc = 'best')
 
 plt.show()
-
-
-# print('result mean', mean)
-
-
-
 
 
 
