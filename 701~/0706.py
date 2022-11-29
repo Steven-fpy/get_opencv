@@ -24,6 +24,8 @@ print('type(contours[0]) = ', type(contours[0]))
 print('len(contours) = ', len(contours))
 print('contours[0].shape = ', contours[0].shape)
 print('contours[0] = ', contours[0])
+print('hierarchy = ', hierarchy)
+
 
 #3
 cv2.drawContours(src, contours, -1, (255, 0, 0,), 3)  #모든 윤곽선

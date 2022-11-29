@@ -25,6 +25,8 @@ contours, hierarchy = cv2.findContours(gray, mode, method)
 print('len(contours) = ', len(contours))
 print('contours[0].shape = ', contours[0].shape)
 print('contours = ', contours)
+print('hierarchy = ', hierarchy)
+
 
 #3
 # cv2.drawFrameAxes(src, contours, -1, (255, 0, 0,), 3)  #모든 윤곽선
@@ -40,3 +42,14 @@ for cnt in contours:
 cv2.imshow('src', src)
 cv2.waitKey()
 cv2.destroyAllWindows()
+
+
+#동생, 형, 첫째자식, 부모
+#next, previous, first child, parent
+# hierarchy =  
+# [[
+#   [ 1 -1 -1 -1]
+#   [ 2  0 -1 -1]
+#   [ 3  1 -1 -1]
+#   [-1  2 -1 -1]
+# ]]
