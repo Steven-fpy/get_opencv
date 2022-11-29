@@ -79,6 +79,7 @@ def videoStop():
     time.sleep(1)
     pass
 
+# cap = cv2.VideoCapture(0)
 
 cap = cv2.VideoCapture('./data/vtest.avi')
 

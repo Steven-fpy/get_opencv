@@ -34,6 +34,6 @@ while True:
 
 if cap.isOpened():
     cap.release()
-
+# cap.release()
 cv2.destroyAllWindows()
 

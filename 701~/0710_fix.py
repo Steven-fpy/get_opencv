@@ -4,20 +4,24 @@ import cv2
 import numpy as np
 
 #1
-src = cv2.imread('./data/hand.jpg')
-# src = cv2.VideoCapture(0)
+# src = cv2.imread('./data/hand.jpg')
+src = cv2.VideoCapture(0)
 # src = cv2.imread('./data/flower.jpg')
 # src = cv2.imread('./data/lena.jpg')
 # src = cv2.imread('./data/Penguins.jpg')
+frame_size = (
+    int(src.get(cv2.CAP_PROP_FRAME_WIDTH)),
+    int(src.get(cv2.CAP_PROP_FRAME_HEIGHT)),
+)
+mask = np.zeros(shape=(frame_size[0], frame_size[1]), dtype=np.uint8)
 
-
-mask    = np.zeros(shape = src.shape[:2], dtype = np.uint8)
+# mask    = np.zeros(shape = src.shape[:2], dtype = np.uint8)
 # 영상이라서 uint8사용
 markers = np.zeros(shape = src.shape[:2], dtype = np.int32)
 #비교값이라서 int32사용 (음수를 사용할수도 있기 때문)
 
-dst = src.copy()
-cv2.imshow('dst', dst)
+# dst = src.copy()
+# cv2.imshow('dst', dst)
 
 #2
 def onMouse(event, x, y, flags, param):
