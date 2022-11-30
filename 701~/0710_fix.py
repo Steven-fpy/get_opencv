@@ -4,8 +4,11 @@ import cv2
 import numpy as np
 
 #1
-# src = cv2.imread('./data/hand.jpg')
-src = cv2.VideoCapture(0)
+src = cv2.imread('./data/hand.jpg')
+# src = cv2.VideoCapture(0)
+# src = cv2.VideoCapture('http://192.168.0.33:4747/video')
+# src = cv2.VideoCapture('./data/vtest.avi')
+
 # src = cv2.imread('./data/flower.jpg')
 # src = cv2.imread('./data/lena.jpg')
 # src = cv2.imread('./data/Penguins.jpg')

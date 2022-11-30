@@ -3,13 +3,21 @@ import cv2
 import numpy as np
 import time
 import matplotlib.pyplot as plt
+import pafy
 import matplotlib.animation as animation
 
 # 비디오 캡쳐준비 0번 카메라가 메인카메라 간혹 1일때 있음
 # 해당 웹캠의 usb는 다른곳에서 사용중이면 안된다(usb 포트는 1개만 지원)
 
-cap = cv2.VideoCapture(0)
 # cap = cv2.VideoCapture('http://192.168.0.33:4747/video')
+url = 'https://www.youtube.com/watch?v=2r-W51RXSyA'
+# url = 'http://www.youtube.com/watch?v=u_Q7Dkl7AIk'
+# url = 'https://www.youtube.com/watch?v=dalRStsPG0s&list=PL-BpxO3st_vmIw4YlWpbDG3FKJNCpWfaz'
+
+video = pafy.new(url)
+best = video.getbest()
+
+cap = cv2.VideoCapture(best.url)
 
 frameSize = (
     int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)),
