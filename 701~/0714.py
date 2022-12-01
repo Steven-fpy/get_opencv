@@ -4,7 +4,10 @@ import cv2
 import numpy as np
 
 #1
-src = cv2.imread('./data/hand.jpg')
+# src = cv2.imread('./data/hand.jpg')
+# src = cv2.imread('./data/lena.jpg')
+src = cv2.imread('./data/car_num2.jpg')
+
 src2 = cv2.imread('./data/flower.jpg')
 hsv = cv2.cvtColor(src, cv2.COLOR_BGR2HSV)
 
@@ -12,7 +15,7 @@ data = src.reshape((-1, 3)).astype(np.float32)
 data2 = hsv.reshape((-1, 3)).astype(np.float32)
 
 #2
-K = 2
+K = 2                   #색상의 갯수
 term_crit = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.0)
 ret, labels, centers = cv2.kmeans(data, K, None, term_crit, 5, cv2.KMEANS_RANDOM_CENTERS)
 
@@ -48,7 +51,7 @@ dst = res.reshape(src.shape)
 #     dst[labels2 == i] = [b, g, r]
 
 cv2.imshow('dst', dst)
-cv2.imshow('hsv', hsv)
+# cv2.imshow('hsv', hsv)
 # cv2.imshow('src', src)
 # cv2.imshow('src2', src2)
 # cv2.imshow('res', res)

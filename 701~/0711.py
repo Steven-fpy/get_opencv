@@ -4,7 +4,9 @@ import cv2
 import numpy as np
 
 #1
-src = cv2.imread('./data/circles2.jpg')
+# src = cv2.imread('./data/circles2.jpg')
+src = cv2.imread('./data/car_num2.jpg')
+
 # src = cv2.imread('./data/flower.jpg')
 
 # 거리계산식이 포함된 주소

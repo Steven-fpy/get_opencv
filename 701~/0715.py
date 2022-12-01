@@ -18,7 +18,7 @@ for i in range(1, ret):         #분할영역 표시
     r = np.random.randint(256)
     g = np.random.randint(256)
     b = np.random.randint(256)
-    dst[labels == i + 1] = [b, g, r]
+    dst[labels == i] = [b, g, r]
 
 cv2.imshow('res', res)
 cv2.imshow('dst', dst)
