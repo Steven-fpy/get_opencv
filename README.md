@@ -124,7 +124,17 @@
 	- 빌드
 	- 실행
 
+# 221202
 
+	- Flask 모듈 설치
+		- 가상환경에서 pip install Flask
+
+	- applicaltion.py, hello.html 생성
+	- 빌드
+	- 실행
+		- application.py 를 실행하여 주소를 불러온 후
+		- 실행하면 웹페이지에 hello.html에 작성된 내용이 출력된다.
+		- html를 잘 이용 못할 경우, atom, notion등을 이용할 수 있다.
 
 
 ## OpenCv

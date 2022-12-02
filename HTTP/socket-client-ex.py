@@ -1,4 +1,5 @@
 import socket
+import os
 #'192.168.0.49'
 
 HOST = '127.0.0.1'
@@ -15,3 +16,6 @@ while True:
 
     data = clientSocket.recv(1024)
     print('RECEIVED MESSAGES : ', data.decode())
+
+    # if "iws":
+    #     os.system("close()")
