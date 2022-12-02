@@ -8,7 +8,7 @@ import numpy as np
 
 #1
 # src1 = cv2.imread('./data/hand.jpg')
-src1 = cv2.imread('./data/car_num1.jpg',cv2.IMREAD_GRAYSCALE)
+src1 = cv2.imread('./data/car_num1.jpg')#,cv2.IMREAD_GRAYSCALE)
 hsv1 = cv2.cvtColor(src1, cv2.COLOR_BGR2HSV)
 # lowerb1 = (0, 40, 0)
 # upperb1 = (20, 180, 255)
