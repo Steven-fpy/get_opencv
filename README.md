@@ -236,7 +236,6 @@
 		- 221128_미분관련.png 참조
 		
 ## 230131
-
 - openCv 클론한뒤에 자식 브렌치 만들기
 	- git checkout -b [사용할 브렌치 네임]
 		- (git chegit checkout -b openCv_sb)
