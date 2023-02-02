@@ -8,9 +8,10 @@
 # print(o) 
 
 import math
-import matplotlib as mp
-import cv2
-import numpy as np
+# import matplotlib as mp
+# import cv2
+# import numpy as np
 
-a,b = input('밑변과 높이를 입력하세요(쉼표로 구분) : ')
-print(a,b)
+a = input('밑변의 길이를 입력하세요(단위 cm) : ')
+b = input('높이의 길이를 입력하세요(단위 cm) : ')
+print(f'밑변의 길이는 = {a} cm', f'높이의 길이는 = {b} cm 입니다')
