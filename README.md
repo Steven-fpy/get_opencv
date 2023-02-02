@@ -248,3 +248,31 @@
 ## 230202
 
 - 0001.py f 스트링 방식으로 수정
+- git fetch origin
+	- git 패치하기 : 변동사항 있는지 확인
+- git pull origin 'branch name'
+	- 브랜치명의 내용 가져오기 
+- git stash
+	- 임시저장
+- git stash pop
+	- 임시저장 가져오기
+- git stash save "name"
+	- 이름 붙여서 임시저장
+- git stash list
+	- 임시저장 목록확인
+- git stash apply stash@{0}
+	- 이름붙인 임시저장 가져오기
+
+* git conflict 발생시
+	- git checkout main
+		- main 브렌치로 이동
+	- git pull main
+		- main의 최신화
+	- git checkout '충돌브렌치이름'
+		- 충돌 브렌치로 이동
+	- git merge main
+		- main 과 merge하기
+		- 충돌한 부분을 알려준다
+	- 충돌한 파일 수정
+	- git add, commit, push, pull request 진행
+	- main, master 가 변경되면 다시 충돌이 일어날수 있다.
