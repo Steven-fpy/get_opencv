@@ -8,8 +8,8 @@
 # print(o) 
 
 import math
-import matplotlib as mp
-import cv2
+# import matplotlib as mp
+# import cv2
 import numpy as np
 
 a,b = input('밑변과 높이를 입력하세요(쉼표로 구분) : ')
