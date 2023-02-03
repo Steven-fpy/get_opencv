@@ -274,3 +274,8 @@
 	- 충돌한 파일 수정
 	- git add, commit, push, pull request 진행
 	- main, master 가 변경되면 다시 충돌이 일어날수 있다.
+
+### 230203
+
+- GAN 공부
+	- mnist
