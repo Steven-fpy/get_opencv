@@ -285,3 +285,26 @@
 - deeplearning 관련 서적 주문
 - python 관련서적 주문
 - 포트폴리오 수정및 보완
+
+### 230207
+
+- 뷰티파이
+	- 영역 지정한 후 ctrl + shift + b
+	* 간격등이 보기 좋게 바뀐다
+	* 단! 파이썬에 사용시 주의 해야 한다
+- git reset --soft HEAD^    (최근 커밋 하기전으로 돌림)
+- git reset --hard HEAD^    (최근 커밋과 스테이징 파일변경 등을 수정하기전으로 돌림(변경이 불가하다))
+- git reset HEAD~1          (커밋 실행 취소 (수량~1,2,3...))
+- git log                   (log 보기)
+- git log --oneline         (log 한줄로 간략히 보기)
+- github 에서 글씨중간에 줄이 그어져 있는경우 code임을 명시해 줘야 한다.
+	- 수정을 통해 변경
+	
+- conflicts 해결과 cherry-pick 연습
+    - main_light.ino 수정
+    - conflict 는 먼저 알맞는 부모 브렌치를 풀 하고 작업을 시작하면 안생기나, 혹여 발생시 틀린 부분을 알맞게 수정하주고 다시 커밋한다
+    * cherry-pick은 풀해온 브렌치에 여러개의 커밋이 있을떄 특정 부분의 커밋만 가져올 경우 사용한다
+        - git cherry-pick [커밋해시]
+            - 커밋 뒤에 해시부분을 복사해서 넣으면 된다.
+            - ex) [git cherry-pick c886c1054eb2c32b02cc64a6bda26821af685f39]
+
