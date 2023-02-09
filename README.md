@@ -308,3 +308,6 @@
             - 커밋 뒤에 해시부분을 복사해서 넣으면 된다.
             - ex) [git cherry-pick c886c1054eb2c32b02cc64a6bda26821af685f39]
 
+### 230209
+- revert
+
