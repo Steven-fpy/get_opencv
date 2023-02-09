@@ -260,6 +260,7 @@
 	- 임시저장 목록확인
 - git stash apply stash@{0}
 	- 이름붙인 임시저장 가져오기
+	* window는 git stash apply 'stash@{0}'
 
 * git conflict 발생시
 	- git checkout main
