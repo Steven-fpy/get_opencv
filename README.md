@@ -330,3 +330,18 @@
 - 드론 일방적인 취소
 - 아두이노 나노 배송완료
 - 실드 배송완료
+
+### 230215
+
+- Lidar 2ea 수령
+- Lidar 관련 자료 검색
+	- https://www.youtube.com/watch?v=4sQCz75BfrM
+	- 라이다 시연영상
+	
+	- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=chandong83&logNo=221254131929
+	- 라이다 아두이노 연결
+	- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=chandong83&logNo=221293021042
+	- 라이다 간단 연결
+
+	- https://remnant24c.tistory.com/218
+	- 라이다 관련 자료
