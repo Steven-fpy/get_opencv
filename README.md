@@ -345,3 +345,9 @@
 
 	- https://remnant24c.tistory.com/218
 	- 라이다 관련 자료
+
+	- https://www.youtube.com/watch?v=VhbFbxyOI1k
+	- 드론봇 워크샾 영상
+
+	- https://www.youtube.com/watch?v=6S_fffMb8C8
+	- 라이다 맵핑
