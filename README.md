@@ -351,3 +351,9 @@
 
 	- https://www.youtube.com/watch?v=6S_fffMb8C8
 	- 라이다 맵핑
+
+	- https://www.boannews.com/media/view.asp?idx=92797&kind=
+	- Lidar와 IOT의 위험성
+
+	- https://kocoafab.cc/make/view/751
+	- 모빌리티 코드 참조
