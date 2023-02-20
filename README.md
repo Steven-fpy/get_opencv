@@ -372,3 +372,7 @@
 	- 딥러닝과 머신러닝 : 2017년 발간 도서로 다양한 내용이 수록되어 있음
 	  openCV를 이용한 딥러닝 keras, tensorflow, 
 	  mnist 등 다양한 내용이 전부 들어 있어 종합적인 지식을 얻기에는 좋다
+
+### 230220
+
+- Deep learning study
