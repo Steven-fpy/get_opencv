@@ -376,3 +376,7 @@
 ### 230220
 
 - Deep learning study
+
+### 230222
+
+- LIDAR sensor test 
