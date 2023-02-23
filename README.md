@@ -383,3 +383,7 @@
 
 - https://blog.naver.com/roboholic84/221740028135
 	- 라이다 아두이노 코드
+
+### 230223
+
+- LiDAR 관련 자료조사
