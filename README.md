@@ -401,3 +401,6 @@
 
 - 아두이노 buzzer remind 및 연구
 - LiDAR 센서 모터 동작확인
+- git_test 리포지토리로 이동시켜 실습
+- 광센서 연구
+	- light_sensor.ino, light_sensor_led.ino
